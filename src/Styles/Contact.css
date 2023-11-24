@@ -1,12 +1,64 @@
-label {
-    display: block;
-    font:
-      1rem 'Fira Sans',
-      sans-serif;
-  }
-  
-  input,
-  label {
-    margin: 0.4rem 0;
-  }
-  
+/* Remove the background image from the universal selector */
+body {
+  background-image: url('https://e0.pxfuel.com/wallpapers/26/208/desktop-wallpaper-google-now-chrome-cool-cool-simple-landscape-background-minimalist-chrome.jpg');
+  /* Additional styles for the background if needed */
+  background-size: cover;
+  background-position: center;
+  /* Other background properties can be added */
+}
+
+#karibu {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: solid 1px;
+  background: linear-gradient(to top, rgb(59, 55, 55) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: background-position 0.5s ease, color 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  color: black;
+}
+
+#karibu::before {
+  content: 'Karibu...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+  color: transparent;
+}
+#karibu:hover::before {
+  opacity: 1;
+  color: white;
+}
+
+#karibu:hover {
+  background-position: 0% 100%;
+  color: transparent;
+  cursor: pointer;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Makes sure it occupies the full height of the viewport */
+ margin-left: -60%;
+}
+/* Your existing CSS... */
+
+/* Styling for the three dots */
+.more-icon {
+  font-size: 24px; /* Adjust the font size if needed */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.more-icon:hover {
+  color: red; /* Change to your preferred color */
+  transform: scale(1.1); /* Optional: Slight scale effect on hover */
+  content: "\1F60E"; /* Replace with your preferred emoji unicode */
+}
