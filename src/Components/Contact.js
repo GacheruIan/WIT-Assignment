@@ -47,12 +47,12 @@ export default function Contact() {
         title="Welcome Ian"
         // subheader="September 14, 2016"
       />
-      {/* Wrap the CardMedia with an anchor tag for the image link */}
+
       <a href="https://www.linkedin.com/in/ian~kibui/" onClick={handleImageClick}>
         <CardMedia
           component="img"
           height="194"
-          image="https://media.tenor.com/GfSX-u7VGM4AAAAC/coding.gif" // Replace this URL with your image link
+          image="https://media.tenor.com/GfSX-u7VGM4AAAAC/coding.gif" 
           alt="userimage"
           onClick={handleImageClick}
         />
