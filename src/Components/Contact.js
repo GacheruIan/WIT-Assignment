@@ -69,6 +69,7 @@ export default function Contact() {
       </Typography>
       </CardContent>
     </Card>
+    
     </div>
 
   );

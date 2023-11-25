@@ -11,7 +11,7 @@ body {
   padding: 10px 20px;
   border-radius: 15px;
   border: solid 1px;
-  background: linear-gradient(to top, rgb(59, 55, 55) 50%, white 50%);
+  background: linear-gradient(to top, rgb(114, 30, 93) 50%, white 50%);
   background-size: 100% 200%;
   transition: background-position 0.5s ease, color 0.5s ease;
   position: relative;
