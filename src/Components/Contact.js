@@ -47,7 +47,6 @@ export default function Contact() {
         title="Welcome Ian"
         // subheader="September 14, 2016"
       />
-
       <a href="https://github.com/GacheruIan" onClick={handleImageClick}>
         <CardMedia
           component="img"
