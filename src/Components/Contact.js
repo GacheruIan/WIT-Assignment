@@ -1,19 +1,19 @@
 import React from 'react';
 import { useState } from 'react';
-import { Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Avatar, IconButton, Typography } from '@mui/material';
+import { Card, CardHeader, CardMedia, CardContent, Avatar, IconButton, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
 import "../Styles/Contact.css"
 
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 export default function Contact() {
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
   const [showEmoji, setShowEmoji] = useState(false);
 
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
 
   const handleLinkedInClick = () => {
     window.open('https://www.linkedin.com/in/ian~kibui/', '_blank');
@@ -26,7 +26,7 @@ export default function Contact() {
 
   const handleImageClick = () => {
     // Redirect to the specified link when the image is clicked
-    window.open('', '_blank');
+    window.open('https://github.com/GacheruIan', '_blank');
   };
 
   return (
@@ -48,7 +48,7 @@ export default function Contact() {
         // subheader="September 14, 2016"
       />
 
-      <a href="https://www.linkedin.com/in/ian~kibui/" onClick={handleImageClick}>
+      <a href="https://github.com/GacheruIan" onClick={handleImageClick}>
         <CardMedia
           component="img"
           height="194"
